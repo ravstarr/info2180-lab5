@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Database Lookup</title>
+    <link href="world.css" type="text/css" rel="stylesheet" />
+    <script src="world.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <h1>World Database Lookup</h1>
+        <p>Search for country information or cities within countries</p>
+    </header>
+
+    <main>
+        <div id="controls">
+            <div class="input-group">
+                <label for="country">Country Name:</label>
+                <input id="country" type="search" name="country" 
+                       placeholder="Enter country name (e.g., Jamaica, United, Japan)" 
+                       aria-label="Country name to search" />
+            </div>
+            
+            <div class="button-group">
+                <button id="lookup" class="btn btn-country">
+                    <span>🔍</span> Lookup Country
+                </button>
+                <button id="lookupCities" class="btn btn-city">
+                    <span>🏙️</span> Lookup Cities
+                </button>
+            </div>
+            
+            <div class="instructions">
+                <p><strong>Tip:</strong> Leave blank to see all countries. Use partial names (e.g., "Unit" for United States, United Kingdom).</p>
+            </div>
+        </div>
+        
+        <div id="result">
+            <!-- Results will appear here -->
+            <div class="placeholder">
+                <p>Enter a country name and click a button to see results here.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>INFO2180 Lab 5 - PHP and MySQL - Ravaughn Marsh</p>
+        </footer>
+    </main>
+</body>
+</html>
